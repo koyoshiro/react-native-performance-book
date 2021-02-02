@@ -4,8 +4,8 @@
 
 * [第一章 概念]()
     * [性能优化的定义](chapter1/definition.md)
-    * [性能优化的意义](part1/gitbook.md)
-    * [性能优化的分类](part1/gitbook.md)
+    * [性能优化的意义](chapter1/meaningful.md)
+    * [性能优化的分类](chapter1/viewpoint.md)
 * [第二章 量化]()
     * [量化角度](part1/writing.md)
     * [量化方式](part1/gitbook.md)
