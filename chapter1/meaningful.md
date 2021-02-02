@@ -7,7 +7,6 @@
 - 与访问速度较慢的网站相比，用户在访问速度较快的网站上访问频率更高，停留时间更长，搜索更多并且购物频率更高；一家公司发现，转换速度提高了7％，这是因为速度提高了0.85秒（来源：[WPO Stats](https://wpostats.com/)）。
 - 缓慢的加载不利于搜索引擎优化（SEO），因为它会降低您网站的排名，从而减少访问次数，阅读次数和转化次数。Google将于2018年将网站速度作为其移动搜索的排名信号（来源： [Search Engine Land](https://searchengineland.com/google-speed-update-page-speed-will-become-ranking-factor-mobile-search-289904)）。
 
----
 
 ## 性能与业务的关系
 性能优化的重要意义往往体现在与业务间的关系，两者相辅相成，这是由于性能优劣的评判是由用户“投票”得出的。
@@ -25,7 +24,6 @@
     下图图示了两种不同的页面加载性能，可以明显得看见两者页面渲染效果的差异。
     [![sN6Tbt.png](https://webdev.imgix.net/why-speed-matters/speed-comparison.png)](https://webdev.imgix.net/why-speed-matters/speed-comparison.png)
 
----
 
 ## 性能优化效果对比
 ### 动态图效果
