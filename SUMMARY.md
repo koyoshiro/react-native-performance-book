@@ -14,10 +14,10 @@
 ---
 
 * [第三章 优化]()
-    * [客户端优化方式](part1/writing.md)
-    * [前端优化方式](part1/gitbook.md)
-    * [服务端优化方式](part1/gitbook.md)
-    * [实践小结](part1/gitbook.md)
+    * [客户端优化方式](chapter3/native.md)
+    * [前端优化方式](chapter3/frontend.md)
+    * [服务端优化方式](chapter3/service.md)
+    * [实践小结](chapter3/summary.md)
 * [第四章 体系]()
-    * [整体结构](part1/writing.md)
-    * [保障措施](part1/gitbook.md)
+    * [整体结构](chapter4/construction.md)
+    * [保障措施](chapter4/safeguard.md)
