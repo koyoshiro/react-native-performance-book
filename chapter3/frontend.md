@@ -138,9 +138,9 @@ React Native 渲染的本质是将 JSX 构建的虚拟 DOM 树通过 Native Rend
 
 然而次级界面在TTI阶段前，大部分是不需要进行渲染的，可以配合 LazyRequire 的方式完成。
 
-下图中红框部分的提示功能，点击后将出现右侧图中的内容浮层。而内容浮层本身并不需要在页面加载过程中完成加载和渲染工作，可以放在TTI阶段之后去完成，并不会影响交互的流畅程度。
-
 [![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734048157-394a399e-221e-46b7-a966-ac613de8e9cc.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734048157-394a399e-221e-46b7-a966-ac613de8e9cc.png?x-oss-process=image%2Fresize%2Cw_600)
+
+上图中红框部分的提示功能，点击后将出现下图中的内容浮层。而内容浮层本身并不需要在页面加载过程中完成加载和渲染工作，可以放在TTI阶段之后去完成，并不会影响交互的流畅程度。
 
 [![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734382248-a8bc20cc-25f7-4616-9488-fd8be1fd2efa.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734382248-a8bc20cc-25f7-4616-9488-fd8be1fd2efa.png?x-oss-process=image%2Fresize%2Cw_600)
 
