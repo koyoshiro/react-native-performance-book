@@ -90,7 +90,7 @@ module.exports = Common;
 
 以Trip App的国际航班列表页为例，来看下骨架屏的应用：
 
-[![yMo3vT.jpg](https://s3.ax1x.com/2021/02/03/yMo3vT.jpg)](https://imgchr.com/i/yMo3vT)
+<img src="https://s3.ax1x.com/2021/02/03/yMo3vT.jpg" style="zoom:30%" />
 
 同时，骨架屏也是缩短FCP和FMP 指标的重要方法，主要方式：
 - 减少加载骨架屏之前的非必要模块引用
@@ -104,7 +104,7 @@ module.exports = Common;
 
 我们还是以Trip App的国际列表页为例，可以看见下图中页面仍然处在加载过程中，但红框部分已经出现了部分航班卡片，这就是采用分批次渲染实现的效果。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611655728681-404bbc43-77d5-47de-8bb8-43f7e9a8b3f8.png?x-oss-process=image%2Fresize%2Cw_622)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611655728681-404bbc43-77d5-47de-8bb8-43f7e9a8b3f8.png?x-oss-process=image%2Fresize%2Cw_622)
+<img src="https://s3.ax1x.com/2021/02/04/y1j4jH.png" style="zoom:50%" />
 
 
 ## 渐进式渲染
@@ -116,9 +116,9 @@ React Native 渲染的本质是将 JSX 构建的虚拟 DOM 树通过 Native Rend
 
 下面两幅图在渲染过程中采用了渐进式渲染，观察红框部分的差异可以发现，航空公司等非关键信息存在延迟加载的效果。 
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611736223282-cc18163b-deea-405e-b588-2d10f607f938.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611736223282-cc18163b-deea-405e-b588-2d10f607f938.png?x-oss-process=image%2Fresize%2Cw_600)
+<img src="https://s3.ax1x.com/2021/02/04/y1j0c4.png" style="zoom:50%" />
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611736375028-066fce28-3818-4c66-8c68-79ece0e1ffdc.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611736375028-066fce28-3818-4c66-8c68-79ece0e1ffdc.png?x-oss-process=image%2Fresize%2Cw_600)
+<img src="https://s3.ax1x.com/2021/02/04/y1vtrd.png" style="zoom:50%" />
 
                     
 ## 延迟渲染
@@ -128,9 +128,9 @@ React Native 渲染的本质是将 JSX 构建的虚拟 DOM 树通过 Native Rend
 
 下面两张图对比红框部分，可以看到非核心模块被延迟渲染，由于在TTI阶段之后的很短时间内完成渲染，并不会影响用户的交互体验。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611737605102-737b72be-92a0-4c95-9490-f6490772aed8.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611737605102-737b72be-92a0-4c95-9490-f6490772aed8.png?x-oss-process=image%2Fresize%2Cw_600)             
+<img src="https://s3.ax1x.com/2021/02/04/y1jw3F.png" style="zoom:50%" />         
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611737680537-0ab7e7da-103c-4a39-9910-ddd444603628.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611737680537-0ab7e7da-103c-4a39-9910-ddd444603628.png?x-oss-process=image%2Fresize%2Cw_600)
+<img src="https://s3.ax1x.com/2021/02/04/y1xZJf.png" style="zoom:50%" />
 
 
 ## 按需渲染
@@ -138,12 +138,11 @@ React Native 渲染的本质是将 JSX 构建的虚拟 DOM 树通过 Native Rend
 
 然而次级界面在TTI阶段前，大部分是不需要进行渲染的，可以配合 LazyRequire 的方式完成。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734048157-394a399e-221e-46b7-a966-ac613de8e9cc.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734048157-394a399e-221e-46b7-a966-ac613de8e9cc.png?x-oss-process=image%2Fresize%2Cw_600)
+<img src="https://s3.ax1x.com/2021/02/04/y1jru9.png" style="zoom:50%" />
 
 上图中红框部分的提示功能，点击后将出现下图中的内容浮层。而内容浮层本身并不需要在页面加载过程中完成加载和渲染工作，可以放在TTI阶段之后去完成，并不会影响交互的流畅程度。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734382248-a8bc20cc-25f7-4616-9488-fd8be1fd2efa.png?x-oss-process=image%2Fresize%2Cw_600)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611734382248-a8bc20cc-25f7-4616-9488-fd8be1fd2efa.png?x-oss-process=image%2Fresize%2Cw_600)
-
+<img src="https://s3.ax1x.com/2021/02/04/y1jsBR.png" style="zoom:50%" />
       
 ## 预渲染
 
@@ -153,10 +152,8 @@ React Native 渲染的本质是将 JSX 构建的虚拟 DOM 树通过 Native Rend
 
 具体方法是在Page A时，通过 Native API 热启动一个新的 React Native 容器，同时在新容器内预加载Page B的 Bundle 并执行。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611738448390-cba15594-868a-44c2-b63b-87ad41288520.png?x-oss-process=image%2Fresize%2Cw_622)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611738448390-cba15594-868a-44c2-b63b-87ad41288520.png?x-oss-process=image%2Fresize%2Cw_622)
-
+<img src="https://s3.ax1x.com/2021/02/04/y1jcAx.png" style="zoom:50%" />
 
 上图中，点击红框中的搜索按钮后，会热启动打开一个透明的React Native容器并开始执行Bundle内容，在延迟一定时间后（通常是300-500ms），展示容器中的渲染结果，如下图所示。
 
-[![yMo3vT.jpg](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611738482439-0b669bbc-66a8-47f7-bb80-6c8da2782a8a.png?x-oss-process=image%2Fresize%2Cw_622)](https://cdn.nlark.com/yuque/0/2021/png/2487128/1611738482439-0b669bbc-66a8-47f7-bb80-6c8da2782a8a.png?x-oss-process=image%2Fresize%2Cw_622)
-
+<img src="https://s3.ax1x.com/2021/02/04/y1jyH1.png" style="zoom:50%" />

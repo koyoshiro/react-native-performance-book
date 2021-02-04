@@ -15,8 +15,7 @@
 React Native的默认引擎目前在iOS平台使用JavaScriptCore（Apple要求），Android平台默认使用JavaScriptCore，也可切换使用V8。
 
 JavaScriptCore本身由词法分析（Lexer）、语法分析（Parser）、字节码生成（ByteCodeGenerator）和解释执行（LLInt & JIT）组成，运行流程如下图：
-
-![sI7UYV.png](https://pic3.zhimg.com/80/v2-8488dc8bf222f987dc548be1321a610e_1440w.jpg)
+<img src="https://pic3.zhimg.com/80/v2-8488dc8bf222f987dc548be1321a610e_1440w.jpg" style="zoom:30%" />
 
 
 大致的执行流程可以概括为：
@@ -35,8 +34,7 @@ Hermes引擎仅支持Android平台，在实践过程中与Bundle包的关系如�
 - 非首次运行且存在字节码文件时，自动使用Hermes引擎运行。
 
 在实践中的效果优异，Android端的性能指标有明显降低，下图使用FMP指标为例：
-
-[![soS4eK.png](https://s3.ax1x.com/2021/01/22/soS4eK.png)](https://imgchr.com/i/soS4eK)
+<img src="https://s3.ax1x.com/2021/01/22/soS4eK.png" style="zoom:50%" />
 
 ## 容器热启动
 当 Native 打开一个崭新的 React Native 界面时，需要经过如下步骤：
@@ -53,7 +51,7 @@ Hermes引擎仅支持Android平台，在实践过程中与Bundle包的关系如�
 ## 容器复用
 当多个页面之间存在 ABAB 式的用户行为流时，可以复用React Native容器达到性能调优的目的。用户行为流示意如下图：
 
-[![soC8IO.png](https://pic4.zhimg.com/80/v2-b3abf4d089ccdaa4b1d52bab6c5fbf4f_1440w.png)](https://pic4.zhimg.com/80/v2-b3abf4d089ccdaa4b1d52bab6c5fbf4f_1440w.png)
+<img src="https://pic4.zhimg.com/80/v2-b3abf4d089ccdaa4b1d52bab6c5fbf4f_1440w.png" style="zoom:60%" />
 
 
 在往复的过程中，Page A和Page B的所处的状态是完全不一致的，Page A全程只被打开了一次，而Page B被打开了两次。原因如下：

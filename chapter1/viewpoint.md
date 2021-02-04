@@ -35,7 +35,7 @@ React Native的本质是存在于客户端提供的容器中，性能调优的�
 
 前端与客户端在业务层和架构层都存在千丝万缕的联系，微观上小到交互接口，宏观上大到React Native容器。而跨端的交互必然存在开销，这些开销损耗将影响整个应用的性能。
 
-[![sNforQ.png](https://s3.ax1x.com/2021/01/13/sNforQ.png)](https://imgchr.com/i/sNforQ)
+<img src="https://s3.ax1x.com/2021/01/13/sNforQ.png" style="zoom:60%" />
 
 在不影响实际功能与用户体验的前提下，减少或规避这些开销造成的耗损，是以客户端角度做性能调优的方向之一。
 
